@@ -12,4 +12,4 @@ https://nodejs.org/en/ - here's the link
 `node app.js`  
 
 # Docs
-Docs are available at http://127.0.0.1:3000/doc
+Docs are available at http://127.0.0.1:3000/doc or [here](https://fourslash.github.io/WebLearning/)
