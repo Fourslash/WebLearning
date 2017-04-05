@@ -1,11 +1,10 @@
 const APP_PORT = '3000';
 const APP_HOSTNAME = '0.0.0.0'
 
+const express = require('express');
 const logger = require('morgan');
-
 const router = require('./app/router').router;
 
-const express = require('express');
 const app = express();
 
 app.use(logger('dev'));
