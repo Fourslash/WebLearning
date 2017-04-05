@@ -3,6 +3,8 @@ const APP_HOSTNAME = '0.0.0.0'
 
 const express = require('express');
 const logger = require('morgan');
+const bodyParser = require('body-parser');
+
 const router = require('./app/router').router;
 const unhandledRejectionHandler = 
     require('./app/error-handling/UnhandledRejection').middleware;
@@ -10,6 +12,7 @@ const routeNotFoundHandler =
     require('./app/error-handling/404').middleware;
 
 const app = express();
+app.use(bodyParser.json());
 // Logging
 app.use(logger('dev'));
 
