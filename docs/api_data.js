@@ -58,7 +58,7 @@ define({ "api": [
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "string",
+            "type": "string/string[]",
             "optional": false,
             "field": "addedString",
             "description": ""

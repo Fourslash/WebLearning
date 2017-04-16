@@ -21,7 +21,7 @@ class Controller {
      * @api {post} /strings Add string to array
      * @apiName AddString
      * @apiGroup StringArray
-     * @apiParam {string | string[]} addedString
+     * @apiParam {string/string[]} addedString
      * @apiParamExample cURL request example
      *  curl -XPOST -H "Content-type: application/json" -d '{"addedString": "qwe"}' 'http://127.0.0.1:3000/strings'
      * @apiError (400) WrongParametr 'Expected "addedString" param in request body'
