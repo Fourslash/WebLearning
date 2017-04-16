@@ -138,7 +138,7 @@
           {
             "group": "404",
             "optional": false,
-            "field": "WrongParametr",
+            "field": "NotFound",
             "description": "<p>'There is no element ${string} in array'</p>"
           }
         ]
