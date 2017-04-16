@@ -1,16 +1,16 @@
 const lodash = require('lodash');
 
 // lets pretend its database
-const someStrings = ['foo', 'bar'];
+let someStrings = ['foo', 'bar'];
 
 class Service {
 
     /**
      * 
-     * @param {string} value 
+     * @param {string | string[]} value 
      */
-    static add(value) {
-        someStrings.push(value);
+    static add(value) {        
+        someStrings = someStrings.concat(value);
     }
 
     /**
